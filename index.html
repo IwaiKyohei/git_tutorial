@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--終了タグが必要か分からないときは"html mdn ~"で検索-->
+<!--!tabキーでひな形
+  li>li*3
+-->
+<!--迷ったらmdnで検索
+フォームのinputの型-->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"><title>はじめてのHTML</title><style>h1{color:red;}</style><style>.red{ color: red; }</style>
+  </head>
+  <body>
+    <h1>お問い合わせ</h1>
+    <form action="#" method="POST">
+      <input type="text" name="username" placeholder="USERNAME" required>
+      <input type="password" name="password" placeholder="PASSWORD" required maxlength="8">
+      <input type="submit" name="ログイン" >
+      <dl>
+        <dt><label for="username">NAME</label></dt>
+        <dd><input id="username" type="text" name="username"></dd>
+        <dt>adress</dt>
+        <dd><input type="text" name="E-MAIL"></dd>
+        <dt><label for="area">地域</label></dt>
+        <dd><select id="area" name="erea">
+          <option value="" selected>選択してください</option>
+          <option value="hokkaido">北海道</option>
+          <option value="2">22</option>
+          <option value="3">33</option>
+          <option value="4">44</option>
+          <option value="5">55</option>
+          <option value="6">66</option>
+        </select></dd>
+      </dl>
+      <dt>性別</dt>
+      <dd>
+        <label><input type="radio" name="gender" value="male" checked> 男性</label>
+        <label><input type="radio" name="gender" value="female"> 女性</label>
+      </dd>
+      <dt>お問い合わせ内容</dt>
+      <dd><textarea name="contents"></textarea></dd>
+      <dt>プライバシーポリシーに同意する</dt>
+      <dd><input type="checkbox" name="privacy" value="1"></dd>
+      <input type="submit" name="submit" value="送信" >
+
+
+    </form>
+    <!--table>thread>tr>td*2-->
+    <table border="1">
+      <tr>
+        <th colspan="3">横結合</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+    </table>
+    <table border="1">
+      <tr>
+        <td rowspan="3">縦結合</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+      </tr>
+
+    </table>
+    <table border="1">
+      <caption>caption</caption>
+      <thead>
+        <tr>
+          <th>header1</th>
+          <th>header2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>body1</td>
+          <td>body2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>footer1</th>
+          <th>footer2</th>
+        </tr>
+      </tfoot>
+    <table border="1">
+      
+    </table>
+      <tr>
+        <td>yamada</td>
+        <td>taro</td>
+      </tr>
+      <tr>
+        <td>tanaka</td>
+        <td>hanako</td>
+      </tr>
+    </table>
+    <p>aaa<span class="red">span</span>aaa</p>
+    <p>aaa<div>span</div>aaa</p>
+    <header>
+    <h1>group1</h1>
+    <nav>
+      <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+      <article>
+        <h2>group2-1</h2>
+        <p>contents</p>
+      </article>
+      
+      <section>
+        <h2>group2-2</h2>
+        <ul>
+          <li><a href="#">2-2-1</a></li>
+          <li><a href="#">2-2-2</a></li>
+          <li><a href="#">2-2-3</a></li>
+        </ul>
+      </section>  
+    </main>
+    <aside>
+      <h2>group2-3</h2>
+      <p></p>  
+    </aside>
+    <footer>
+      <p><small>&copy;aaaaa</small></p>
+    </footer>
+    <p><small>&copy;chiisaimoji</small></p>
+    <!--文字実体参照は44-->
+    <p>aaa<strong>BIG</strong>aaa</p>
+    <h1>はじめての見出し</h1>
+    <h1>midasi
+      <h2>midasih2</h2>
+    </h1>
+    <a href="https://blog.proglus.jp/" target="_blank" rel="noopener">プログラミング入門ナビ</a><br>
+    <a href="page2.html">to page2</a>
+    <a href="#apple">to ringo</a>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <h2 id="apple">ringo</h2>
+    <p>初めての段落</p>
+    <p>
+      1000<br>
+      nagatachou
+    </p>
+    <p>kugiri</p>
+    <hr>
+    <p>kugiri</p>
+    <ul>
+      <li>lingo</li>
+      <li>mikan
+        <ul>
+          <li>aa</li>
+          <li>aaa</li>
+        </ul>
+      </li>
+      <li>budou</li>
+    </ul>
+    
+    <ol>
+      <li>111</li>
+      <li>222</li>
+      <li>333</li>
+    </ol>
+
+    <dl>
+      <dt>def title</dt>
+      <dd>def def</dd>
+    </dl>
+    <img src="sousahouhou.png" width="300" height="200" alt="操作方法"><br>
+    
+  </body>
+</html>
